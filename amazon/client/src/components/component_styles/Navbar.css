@@ -1,0 +1,66 @@
+.navbar,
+.navbar .input {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .input {
+  width: 50%;
+  height: 100%;
+}
+
+.navbar .input input {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: none;
+}
+
+.navbar .input input,
+.navbar .input button {
+  height: 70%;
+}
+
+.navbar .input:focus {
+  border: 3px solid orange;
+}
+
+.navbar .input button {
+  width: 6%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  background-color: orange;
+  cursor: pointer;
+}
+
+.navbar .input button:hover {
+  background-color: rgb(255, 188, 64);
+}
+
+.navbar .input input:focus {
+  outline: none;
+  border: 3px solid orange;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.navbar {
+  justify-content: space-around;
+  height: 50px;
+  background-color: rgb(49, 49, 49);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  color: orange;
+}
