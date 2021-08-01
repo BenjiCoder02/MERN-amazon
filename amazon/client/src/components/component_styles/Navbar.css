@@ -16,6 +16,11 @@
   border: none;
 }
 
+.navbar .input .mini-searchbar,
+.navbar .input .mini-searchbar-btn {
+  display: none;
+}
+
 .navbar .input input,
 .navbar .input button {
   height: 70%;
@@ -61,6 +66,22 @@
   font-size: 14px;
 }
 
+.navbar .cart,
+.navbar .cart p {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .cart p {
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(180, 117, 0);
+  text-align: center;
+  border-radius: 100%;
+  color: white !important;
+}
+
 .navbar a:hover {
   color: orange;
 }
@@ -72,7 +93,7 @@
 }
 @media screen and (max-width: 630px) {
   .navbar .input input {
-    width: 0%;
+    display: none;
   }
 
   .navbar .input {
@@ -93,7 +114,6 @@
 
 @media screen and (max-width: 530px) {
   .navbar .returns {
-    visibility: hidden;
-    position: absolute;
+    display: none;
   }
 }
