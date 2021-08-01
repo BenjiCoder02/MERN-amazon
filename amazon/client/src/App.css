@@ -6,15 +6,19 @@
 }
 
 .home {
-  margin: auto 10%;
+  margin: auto;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .home .item-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-evenly;
+  gap: 10px;
+  margin: auto 5%;
+  margin-top: 270px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -25,10 +29,12 @@
 @media screen and (max-width: 970px) {
   .home .item-container {
     grid-template-columns: 1fr 1fr;
+    margin-top: 200px;
   }
 }
 @media screen and (max-width: 650px) {
   .home .item-container {
     grid-template-columns: 1fr;
+    margin-top: 100px;
   }
 }
