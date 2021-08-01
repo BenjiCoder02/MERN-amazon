@@ -4,3 +4,16 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+.home {
+  margin: auto 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.home .item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  justify-content: space-evenly;
+}
