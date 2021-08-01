@@ -15,8 +15,8 @@ const Navbar = () => {
                 <button type='submit'><SearchIcon /></button>
             </div>
             <a href="#">Hello, Sign in</a>
-            <a href="#">Returns & Orders</a>
-            <a href='#'>Cart</a>
+            <a href="#" className="returns">Returns & Orders</a>
+            <a href='#' className="cart">Cart</a>
             
         </div>
     )
