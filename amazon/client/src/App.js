@@ -11,24 +11,12 @@ import About from "./About"
 import Navbar from "./components/Navbar";
 
 function App() {
+/* Temporarily using React-router for routing*/
+/* To be replace with Axios for making API calls to server*/
   return (
-    
-
     <Router>
       <Navbar />
-
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/home">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
-      </nav>
-
       <Switch>
         <Route path="/about">
           <About />

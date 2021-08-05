@@ -5,10 +5,8 @@ const app = express()
 
 app.use(express.static(path.join(__dirname, 'client/build')))
 
-app.get("/api", function (req, res) {
-    res.json({message: "Hello world"})
-})
-
+//Server routing is not yet completed
+//To be finished this weekend
 app.get("/home", function(req, res){
     res.json({message: "Welcome home"})
 })

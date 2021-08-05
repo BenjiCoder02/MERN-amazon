@@ -32,6 +32,7 @@
   min-width: auto;
   max-width: auto;
   object-fit: cover;
+  object-position: top;
   width: 100vw;
   height: 600px;
   position: absolute;

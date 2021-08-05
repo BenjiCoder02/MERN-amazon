@@ -2,6 +2,7 @@ import React from 'react'
 import "./component_styles/Item.css"
 
 function Item(props){
+    {/* receiving props from parent and rendering as an item*/}
     return (
         <div className="item">
             <a href="#">
