@@ -11,8 +11,10 @@ app.get("/home", function(req, res){
     res.json({message: "Welcome home"})
 })
 
+
+
 app.get('*', (req,res) =>{
-    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+    res.sendFile(path.join('/Users/benjaminkoshy/Desktop/MERN/amazon/client/public/index.html'));
 })
 
 app.listen(process.env.PORT || 4000, function () {

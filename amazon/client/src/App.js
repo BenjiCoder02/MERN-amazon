@@ -7,8 +7,9 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import Home from "./Home"
-import About from "./About"
+import Checkout from "./Checkout"
 import Navbar from "./components/Navbar";
+import PurchaseItem from "./components/PurchaseItem"
 
 function App() {
 /* Temporarily using React-router for routing*/
@@ -18,12 +19,17 @@ function App() {
       <Navbar />
     <div>
       <Switch>
-        <Route path="/about">
-          <About />
+        <Route path="/checkout">
+          <Checkout />
         </Route>
-        <Route path="/home">
+        <Route path="/" exact>
           <Home />
         </Route>
+        
+        <Route path="/product/:id" component={PurchaseItem} />
+     
+  
+        
       </Switch>
     </div>
   

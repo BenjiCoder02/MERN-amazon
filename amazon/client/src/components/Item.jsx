@@ -5,7 +5,7 @@ function Item(props){
     {/* receiving props from parent and rendering as an item*/}
     return (
         <div className="item">
-            <a href="#">
+            <a href={"/product/" + props.name}>
                 <img src={props.imgSrc} alt="item" />
            </a>
              <div className="description">
