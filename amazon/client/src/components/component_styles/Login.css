@@ -1,0 +1,115 @@
+.login,
+.signup {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  border: 2px solid rgb(177, 177, 177, 0.4);
+  border-radius: 5px;
+  width: 300px;
+  height: 550px;
+  margin: 70px auto;
+}
+
+.signup {
+  height: 700px;
+}
+
+.login h2,
+.signup h2 {
+  background-color: white;
+  color: black;
+}
+
+.login form,
+.signup form {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+}
+
+.login form label,
+.signup form label {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  font-weight: 600;
+  height: 50px;
+  font-size: 14px;
+  margin: 10px auto;
+}
+
+.login form label input,
+.signup form label input {
+  height: 25px;
+  margin-top: 5px;
+  padding-left: 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(201, 201, 201);
+}
+.login form label input:focus,
+.signup form label input:focus {
+  outline: 2px solid orange;
+}
+
+.login form button,
+.login form .sign-up a,
+.signup form button,
+.signup form .sign-up a {
+  margin-top: 10px;
+  height: 25px;
+  background-color: rgb(255, 218, 6);
+  border: 1px solid rgb(185, 180, 134);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.signup form .sign-up a {
+  background-color: rgb(231, 231, 231);
+}
+
+.login form button:hover,
+.signup form button:hover {
+  background-color: rgb(230, 197, 12);
+}
+
+.login .sign-up,
+.signup .sign-up {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.login .sign-up div p {
+  color: gray;
+  font-size: 12px;
+}
+
+.login .sign-up div hr {
+  width: 70px;
+}
+
+.login form .sign-up a,
+.signup .sign-up a {
+  background-color: rgb(229, 229, 229);
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login form .sign-up a:hover,
+.signup .sign-up a:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.login .sign-up div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

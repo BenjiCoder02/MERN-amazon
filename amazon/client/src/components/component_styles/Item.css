@@ -39,3 +39,14 @@
     height: 300px;
   }
 }
+@media screen and (max-width: 415px) {
+  .item {
+    width: 200px;
+    height: 250px;
+  }
+
+  .item > a > img {
+    height: 115px;
+    width: auto;
+  }
+}

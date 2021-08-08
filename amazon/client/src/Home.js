@@ -14,11 +14,6 @@ function Home() {
     Passing props to Item component 
   */}
   
-    
-  
-
-  
-  
     return (
       <div className="home">
 

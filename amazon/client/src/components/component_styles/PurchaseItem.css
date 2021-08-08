@@ -1,0 +1,60 @@
+.purchase .details img {
+  height: auto;
+  width: 25vw;
+}
+
+.purchase .details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  margin: 50px;
+  height: auto;
+  min-height: 500px;
+}
+
+.purchase .details img {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.purchase .details h3 {
+  grid-row-start: 1;
+  grid-row-end: 1;
+  width: 100%;
+}
+.purchase .details h2 {
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.purchase .add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100px;
+  margin: auto;
+  font-size: 25px;
+}
+
+.purchase .add button {
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  border: none;
+  background-color: orange;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+}
+
+.purchase .add button:hover {
+  background-color: rgb(243, 191, 95);
+  cursor: pointer;
+}
+
+.purchase {
+  margin: 100px auto;
+}

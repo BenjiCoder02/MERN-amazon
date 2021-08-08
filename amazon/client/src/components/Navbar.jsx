@@ -11,16 +11,16 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" style={{height: '35px'}} alt="amazon logo"/>
+            <a href="/"><img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" style={{height: '35px'}} alt="amazon logo"/></a>
             <div className="input" >
                 <input type="text" />
                
                 <button type='submit'><SearchIcon /></button>
                
             </div>
-            <a href="#">Hello, Sign in</a>
+            <a href="/login">Hello, Sign in</a>
             <a href="#" className="returns">Returns & Orders</a>
-            <a href='#' className="cart"><ShoppingCartIcon /> <p> {cartCount}</p></a>
+            <a href='/checkout' className="cart"><ShoppingCartIcon /> <p> {cartCount}</p></a>
             
         </div>
     )

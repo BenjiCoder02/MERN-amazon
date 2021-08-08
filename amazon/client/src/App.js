@@ -6,10 +6,13 @@ import {
   Link
 } from "react-router-dom";
 import "./App.css";
-import Home from "./Home"
-import Checkout from "./Checkout"
+import Home from "./Home";
+import Checkout from "./Checkout";
 import Navbar from "./components/Navbar";
-import PurchaseItem from "./components/PurchaseItem"
+import PurchaseItem from "./components/PurchaseItem";
+import NotFoundPage from "./components/NotFoundPage";
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
 
 function App() {
 /* Temporarily using React-router for routing*/
@@ -25,9 +28,15 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/sign-up">
+          <SignUp />
+        </Route>
         
         <Route path="/product/:id" component={PurchaseItem} />
-     
+        <Route path="*" component={NotFoundPage} />
   
         
       </Switch>

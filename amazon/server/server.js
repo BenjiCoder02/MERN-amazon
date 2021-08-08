@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, 'client/build')))
 
 //Server routing is not yet completed
 //To be finished this weekend
-app.get("/home", function(req, res){
+app.get("/", function(req, res){
     res.json({message: "Welcome home"})
 })
 
