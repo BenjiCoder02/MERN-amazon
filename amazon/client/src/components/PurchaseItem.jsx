@@ -24,15 +24,20 @@ function PurchaseItem(){
             
             <div className="details">
                 <img src={currentItem[0].imgSrc} alt="item img" />
-                
-                <h3>{currentItem[0].name}</h3>
-                <h2>${currentItem[0].price}</h2>
-            </div>
-            <div className="add">
+                <div>
+                    <h3>{currentItem[0].name}</h3>
+                    <h2>${currentItem[0].price}</h2>
+                </div>
+                <p>{currentItem[0].description}</p>
+                <div className="add">
                 <button>-</button>
                 <p>0</p>
                 <button>+</button>
             </div>
+                
+                
+            </div>
+            
 
            
         </div>

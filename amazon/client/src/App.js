@@ -35,7 +35,7 @@ function App() {
           <SignUp />
         </Route>
         
-        <Route path="/product/:id" component={PurchaseItem} />
+        <Route path="/product/:id" exact component={PurchaseItem} />
         <Route path="*" component={NotFoundPage} />
   
         

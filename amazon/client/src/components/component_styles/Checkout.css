@@ -1,13 +1,52 @@
-h2,
-h3 {
+.checkout h4,
+.checkout p {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  justify-content: left;
+  color: black;
   text-align: center;
-  margin: 70px auto;
-  width: 150px;
-  height: 50px;
-  background-color: gray;
-  border-radius: 10px;
+  margin: 30px auto;
+}
+
+.checkout {
+  margin: 60px 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 1005;
+  height: 100vh;
+}
+
+.summary {
+  background-color: white;
+  height: 300px;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 50px auto;
+}
+
+.summary div p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.summary hr {
+  margin: 30px auto;
+}
+
+.summary div p .total {
+  color: rgb(171, 0, 0);
+  margin: auto 0px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 650px) {
+  .checkout {
+    grid-template-columns: 1fr;
+  }
 }
